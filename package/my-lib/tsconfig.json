@@ -1,0 +1,6 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "files": [],
+  "include": [],
+  "references": [{"path":"../my-shared-lib"},{"path":"./tsconfig.lib.json"}]
+}
