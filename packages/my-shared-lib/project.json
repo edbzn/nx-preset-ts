@@ -1,0 +1,19 @@
+{
+  "name": "@org/my-shared-lib",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/my-shared-lib/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/my-shared-lib",
+        "main": "packages/my-shared-lib/src/index.ts",
+        "tsConfig": "packages/my-shared-lib/tsconfig.lib.json",
+        "assets": ["packages/my-shared-lib/*.md"]
+      }
+    }
+  },
+  "tags": []
+}
